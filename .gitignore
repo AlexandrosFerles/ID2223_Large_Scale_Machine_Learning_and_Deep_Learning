@@ -1,4 +1,6 @@
 .idea
-.ipynb_checkpoints
 .DS_Store
+.ipynb_checkpoints
 Lab2_ConvNets_with_Tensorflow/figs/
+Lab2_ConvNets_with_Tensorflow/Datasets
+Lab2_ConvNets_with_Tensorflow/test_images
