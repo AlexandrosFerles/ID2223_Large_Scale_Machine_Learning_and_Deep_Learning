@@ -153,3 +153,13 @@ with tf.Session(config=config) as sess:
 
     print('####################################################################')
     print()
+
+plt.title('Training set cross entropy loss evolution with better CNN settings')
+plt.plot(train_losses)
+plt.savefig('train_loss_7.png')
+plt.clf()
+
+plt.title('Test set accuracy evolution with better CNN settings')
+plt.plot(test_accuracies)
+plt.savefig('test_acc_7.png')
+plt.clf()
