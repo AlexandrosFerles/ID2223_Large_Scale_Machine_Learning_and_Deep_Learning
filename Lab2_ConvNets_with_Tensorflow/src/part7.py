@@ -120,7 +120,9 @@ new_learning_rate = max_learning_rate
 train_losses = []
 test_accuracies = []
 
-with tf.Session(config=config) as sess:
+print()
+
+with tf.Session() as sess:
 
     sess.run(init)
 
