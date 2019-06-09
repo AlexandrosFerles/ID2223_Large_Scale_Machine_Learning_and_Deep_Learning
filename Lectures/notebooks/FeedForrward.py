@@ -12,10 +12,11 @@ class FeedForwardMNISTNetwork():
         from tensorflow.examples.tutorials.mnist import input_data
         self.mnist = input_data.read_data_sets('./tmp/data')
 
-        self.activation = tf.nn.relu()
-        self.optimizer = tf.train.AdamOptimizer()
+        self.activation = tf.nn.relu
+        self.optimizer = tf.train.AdamOptimizer
         self.with_batch_norm = False
         self.with_dropout = False
+        self.weights_initializer = tf.truncated_normal
 
         # set manually picked settings of the feedforward network
         if args is not None:
